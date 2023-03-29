@@ -1,0 +1,78 @@
+html {
+    font-family: 'Caveat', cursive; 
+    font-size: 180%; 
+    width: 1000px; 
+    margin: auto; 
+    background-color: rgb(245, 251, 222); 
+
+    }
+.right {
+    float: right;
+    padding: 0 20px 20px 0;
+}
+mark {
+    background-color: #ef6780;
+    
+}
+h1, h2 {
+    color: blueviolet; 
+    text-shadow: 4px 5px rgb(241, 188, 188);
+    margin-bottom: 5px; 
+}
+
+p {
+    text-indent: 20px; 
+    margin-top: 10px;
+}
+
+body {
+    background-color:hsl(306, 100%, 96%)
+}
+
+a {
+    margin-left: 20px;
+}
+
+a:hover {
+    color:rgb(225, 28, 143);
+    font-weight: 700;
+}
+
+.k {
+    color: firebrick;
+}
+
+.sh {
+    color:darkgreen;
+    font-weight: 700;
+    text-shadow: 2px 2px white;
+}
+
+ol {
+	list-style-type: none; 
+	counter-reset: num;
+	margin: 0 0 0 45px;
+	padding: 15px 0 5px 0;
+	
+}
+ol li {
+	position: relative;	
+	margin: 0 0 0 0;
+	padding: 0 0 10px 0;
+	line-height: 1;
+}
+ol li:before {
+	content: counter(num); 
+	counter-increment: num;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: -38px;
+	width: 28px;
+	height: 28px;
+	background: #ef6780;
+	color: #fff;
+	text-align: center;
+	line-height: 28px;
+	
+}
