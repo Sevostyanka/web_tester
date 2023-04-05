@@ -1,0 +1,24 @@
+-- create
+CREATE TABLE одногруппники (
+  id INTEGER PRIMARY KEY,
+  name TEXT NOT NULL,
+  age INTEGER NOT NULL,
+  address TEXT NOT NULL
+);
+
+-- insert
+INSERT INTO одногруппники VALUES (1, 'Денис', 20, "Магадан");
+INSERT INTO одногруппники VALUES (2, 'Ольга', 30, "Москва");
+INSERT INTO одногруппники VALUES (3, 'Дарья', 27, "Москва");
+INSERT INTO одногруппники VALUES (4, 'Светлана', 55, "Орел");
+INSERT INTO одногруппники VALUES (5, 'Максим', 34, "Москва");
+INSERT INTO одногруппники VALUES (6, 'Станислав', 27, "Москва");
+INSERT INTO одногруппники VALUES (7, 'Артур', 33, "Грозный");
+INSERT INTO одногруппники VALUES (8, 'Лариса', 28, "Екатеринбург");
+INSERT INTO одногруппники VALUES (9, 'Борис', 42, "Санк-Петербург");
+INSERT INTO одногруппники VALUES (10, 'Тигран', 18, "Москва");
+
+-- fetch 
+SELECT name FROM одногруппники WHERE age BETWEEN 18 AND 29 AND address = "Москва";
+SELECT name FROM одногруппники WHERE
+(age >=18 AND age < 30 AND address = "Москва")
